@@ -1,6 +1,13 @@
+
 <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
+  <style>
+    nav{
+      font-size: larger;
+      font-family: sans-serif;
+    }
+      </style>
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/Home">
       <img src="/assets/ProjectManagement.png" alt="" width="80" height="80" >
       Project Management</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +20,7 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="margin-right: 100px;">
             Categories
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -21,13 +28,18 @@
             <li><a class="dropdown-item" href="#">Another action</a></li>
           </ul>
         </li>
+        <div class="d-flex justify-content-between">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 500px;">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
       </ul>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
 
-        <form class="d-flex justify-content-between">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-
+        <button class="btn btn-primary" type="button"  (click)="gotoroutepage('login')">LOGIN</button>
+        <button class="btn btn-primary" type="button"  (click)="gotoroutepage('signup')">SIGN UP</button>
+      </div>
     </div>
   </div>
 </nav>
